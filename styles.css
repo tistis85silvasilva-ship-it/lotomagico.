@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+}
+
+.splash h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  animation: fadeIn 0.8s ease;
+}
+
+button {
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #e04444;
+}
+
+.numeros-container {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.numero {
+  background-color: #fff;
+  border: 2px solid #ff5c5c;
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 1.2em;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
